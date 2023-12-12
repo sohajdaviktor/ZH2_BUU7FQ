@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\ZH2_BUU7FQ\Models\Course.cs" Link="Models\Course.cs" />
+    <Compile Include="..\ZH2_BUU7FQ\Models\Day.cs" Link="Models\Day.cs" />
+    <Compile Include="..\ZH2_BUU7FQ\Models\Employement.cs" Link="Models\Employement.cs" />
+    <Compile Include="..\ZH2_BUU7FQ\Models\Instructor.cs" Link="Models\Instructor.cs" />
+    <Compile Include="..\ZH2_BUU7FQ\Models\Lesson.cs" Link="Models\Lesson.cs" />
+    <Compile Include="..\ZH2_BUU7FQ\Models\Room.cs" Link="Models\Room.cs" />
+    <Compile Include="..\ZH2_BUU7FQ\Models\Status.cs" Link="Models\Status.cs" />
+    <Compile Include="..\ZH2_BUU7FQ\Models\StudentContext.cs" Link="Models\StudentContext.cs" />
+    <Compile Include="..\ZH2_BUU7FQ\Models\Time.cs" Link="Models\Time.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Results Styling</title>
+    <link href="api.css" rel="stylesheet" />
+    <script src="api.js"></script>
+</head>
+<body>
+    <h1>API's</h1>
+
+    <div class="result-container">
+        <h2>Get All Instructors</h2>
+        <button onclick="getAllInstructors()">Get All Instructors</button>
+        <ul class="result-list" id="allInstructors"></ul>
+    </div>
+
+    <div class="result-container">
+        <h2>Get Instructor by ID</h2>
+        <input type="number" id="instructorId" placeholder="Enter ID">
+        <button onclick="getInstructorById()">Get Instructor by ID</button>
+        <ul class="result-list" id="instructorById"></ul>
+    </div>
+
+    <div class="result-container">
+        <h2>Get Lessons by Instructor Name</h2>
+        <input type="text" id="instructorName" placeholder="Enter Name">
+        <button onclick="getLessonsByInstructor()">Get Lessons by Instructor Name</button>
+        <ul class="result-list" id="lessonsByInstructor"></ul>
+    </div>
+
+    <div class="result-container">
+        <h2>Add Course</h2>
+        <input type="text" id="courseName" placeholder="Enter Course Name">
+        <input type="text" id="courseCode" placeholder="Enter Course Code">
+        <button onclick="addCourse()">Add Course</button>
+        <div id="addCourseResult" class="success-message" style="display: none;"></div>
+    </div>
+</body>
+</html>
